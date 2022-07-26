@@ -17,8 +17,8 @@ import java.util.Optional;
 
 public class AuthenticationTokenFilter extends OncePerRequestFilter {
 
-    private TokenService tokenService;
-    private UserForumRepository userForumRepository;
+    private final TokenService tokenService;
+    private final UserForumRepository userForumRepository;
 
     public AuthenticationTokenFilter(TokenService tokenService, UserForumRepository userForumRepository) {
         this.tokenService = tokenService;
